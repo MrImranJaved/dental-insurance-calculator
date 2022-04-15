@@ -1,0 +1,109 @@
+
+.searchbtn:hover{
+	
+	background-color: #fff;
+	color: #007bff;
+	cursor: pointer;
+}
+.flex{
+	
+	display: flex;
+}
+.mlf10{
+	
+	margin: 0 10px;
+}
+.searchbtn{
+	
+	background-color: #007bff;
+	border: 1px solid #007bff;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1rem;
+	
+}
+#searchbydate:hover{
+	
+	background-color: #fff;
+	color: #007bff;
+	cursor: pointer;
+}
+#searchbydate{
+	
+	background-color: #007bff;
+	border: 1px solid #007bff;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1rem;
+}
+.rqr{ color: red;
+position: absolute;
+ 
+
+}
+.hide{
+	
+	display: none;
+}
+.pagination li a.active{
+    background-color: #007bff;
+    color: #fff;
+}
+.ij-admin-container{
+    padding: 3rem 1rem 1rem;
+}
+.ij-admin-container .header_containerr{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+.ij-admin-container .header_containerr .ij-admin-heading{
+    flex: 0 0 30%;
+    max-width: 30%;
+    text-align: left;
+    font-size: 1.4rem;
+    margin: 0;
+}
+.ij-admin-container .header_containerr #searchleads{
+    flex: 0 0 25%;
+    max-width: 20%;
+	text-transform: capitalize;
+}
+label [for=from]{
+	
+	text-transform: capitalize;
+	
+}
+#dental_leads_admin_screen .danskTableBody tr td:nth-last-child{
+	text-align: center;
+}
+#dental_leads_admin_screen thead{
+    background: #ccc;
+}
+#dental_leads_admin_screen tbody td,
+#dental_leads_admin_screen thead th{
+    padding: 0.8rem 1.5rem;
+    line-height: 1.2;
+    border: 1px solid #ccc;
+}
+#dental_leads_admin_screen thead th{
+    padding: 1.2rem 1.5rem;
+    border: 1px solid #ddd;
+	text-transform: capitalize;
+}
+.dental_leads_admin_screen_model h5{
+    font-size: 1.1rem;
+	margin: 1rem -15px;
+	text-transform: capitalize;
+}
+.dental_leads_admin_screen_model .row div{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: left !important;
+    margin: -2px -1px 0 0;
+	text-transform: capitalize;
+    font-size: 0.9rem;
+}

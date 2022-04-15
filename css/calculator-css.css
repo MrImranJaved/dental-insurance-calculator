@@ -1,0 +1,234 @@
+/* = calculator styles
+ *  ------------------------------------------------------------------- */
+
+.step-five .form-group:nth-child(5), .step-five .form-group:nth-child(7), .step-five .form-group:nth-child(6){ 
+    display: flex;
+
+}
+
+.step-five .form-group:nth-child(5) label  , .step-five .form-group:nth-child(6) label  , .step-five .form-group:nth-child(7) label{
+   
+   font-size: 1.4rem;
+    margin: 0;
+	word-break: break-all;
+
+}
+
+.step-five .form-group:nth-child(5) step5validation  , .step-five .form-group:nth-child(6) step5validation  , .step-five .form-group:nth-child(7) step5validation{ 
+
+
+font-size: 1.3rem;
+
+}
+
+.step-five .form-group:nth-child(5){
+   margin-bottom: 20px !important;
+    width: 126%;
+
+}
+
+.insurance-btn , .insurance-btn:visited {
+  
+    background: #357ebd;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-inline: 3rem;
+    border-radius: 25px;
+    border: 1px solid #357ebd;
+    padding: 15px;
+
+}
+.insurance-btn:hover{ transition: all 0.3s ease;
+    color: #357ebd;
+    background: #fff0;
+    outline: none;  } 
+
+.dansk-insurance-calculator .full-width-contents, 
+.dansk-insurance-calculator .appointment-form, 
+.step-one ,
+.step-two ,
+.step-three ,
+.step-four , 
+.step-five  
+
+{ display: none ;}
+
+.step-five  .form-group label { 
+	
+	position: relative;
+	cursor: pointer;
+
+}
+.step-five input[type= 'checkbox'] ~ label:before{
+	content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+	
+	
+}
+.step-five input[type= 'checkbox']:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.step-five input[type= 'checkbox'] {
+	margin: 6px 0 0;
+	padding: 0;
+	height: initial;
+	width: initial;
+	margin-bottom: 0;
+	display: none;
+	cursor: pointer;
+}
+
+.premiumcalculated > span{ color: #428bca; }
+.required{
+    color: red;
+    padding: 0 0 0 10px;
+}
+/*.premiumcalculated{
+    font-size: 15px; 
+    color: #60646d;    
+    line-height: 32px;
+}*/
+/*.step-two{
+    width: 500px;
+    height: auto;
+    padding-top: 0px !important;
+    padding: 100px 50px;
+}*/
+.dansk-insurance-calculator .appointment-form{
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 4rem 5rem 3rem;
+    margin: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.dansk-insurance-calculator .appointment-form .appointment-form-holder{
+    flex: 0 0 48%;
+    max-width: 48%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+}
+.dansk-insurance-calculator .appointment-form .appointment-form-holder .form-control{
+    margin-top: 0.6rem;
+    height: 50px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.dansk-insurance-calculator .appointment-form-holder .step-one h2{ font-size: 22px; }
+
+.dansk-insurance-calculator .appointment-form .appointment-form-holder select.form-control{
+    background: url('../images/carrot.svg') no-repeat 97% 50% / 1.4rem;
+    appearance: none;
+}
+#proceedstep2,
+.dansk-insurance-calculator .appointment-form .appointment-form-holder .btn{
+    font-size: 1.6rem;
+    margin: 0 auto;
+    max-width: 200px;
+    display: block;
+    border: 1px solid #357ebd !important;
+    box-sizing: border-box;
+    padding-inline: 3rem;
+	text-transform: capitalize;
+}
+.dansk-insurance-calculator .appointment-form .appointment-form-holder .btn{margin-top: 2rem;}
+#proceedstep2:hover,
+#proceedstep2:active,
+#proceedstep2:focus,
+.dansk-insurance-calculator .appointment-form .appointment-form-holder .btn:active,
+.dansk-insurance-calculator .appointment-form .appointment-form-holder .btn:focus,
+.dansk-insurance-calculator .appointment-form .appointment-form-holder .btn:hover{
+    transition: all 0.3s ease;
+    color: #357ebd;
+    background: #fff;
+    outline: none;
+}
+.dansk-insurance-calculator .appointment-form .result{
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-left: 4%;
+    position: relative;
+    padding: 0 4rem;
+}
+.dansk-insurance-calculator .appointment-form .result .premiumcalculated{
+    font-size: 1.4rem;
+    color: #60646d;
+    font-weight: 600;
+    line-height: 2.82;
+	
+    text-transform: capitalize;
+
+}
+.dansk-insurance-calculator .appointment-form .result:before{
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: 0;
+    content: '';
+    background: #ccc;
+    width: 1px;
+    z-index: 1;
+}
+.dansk-insurance-calculator .appointment-form h1.thankyoumessage{
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.insurance-form-loader{
+	
+	
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+@media only screen and (max-width: 1023px){
+    .dansk-insurance-calculator .appointment-form{
+        padding: 2rem 3rem;
+    }
+    .dansk-insurance-calculator .appointment-form h2{
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    .dansk-insurance-calculator .appointment-form .result .premiumcalculated{line-height: 2.1;}
+    .dansk-insurance-calculator .appointment-form .appointment-form-holder .form-control{height: 42px;}
+}
+@media only screen and (max-width: 767px){
+    .dansk-insurance-calculator .appointment-form .result,
+    .dansk-insurance-calculator .appointment-form .appointment-form-holder{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .dansk-insurance-calculator .appointment-form .result{
+        margin: 0;
+        padding: 0;
+    }
+    .dansk-insurance-calculator .appointment-form .result:before{display: none;}
+
+}
